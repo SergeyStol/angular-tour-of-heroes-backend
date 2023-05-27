@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  angular-tour-of-heroes-backend_test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      network: host 
+    ports:
+      - "8080:8080"
+    environment:
+      - NODE_ENV=production
+    logging:
+      driver: "none"
+  newman:
+    build:
+      context: ./postman
+    depends_on:
+      - angular-tour-of-heroes-backend_test

@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "6ee39aea-c0cd-4aa8-83b9-6aed072e87b6",
+		"name": "angular-tour-of-heroes-backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8538440"
+	},
+	"item": [
+		{
+			"name": "heroes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 123,\r\n    \"name\": \"Sergey Stol\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}/api/heroes",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"heroes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "heroes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}/api/heroes",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"heroes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "heroes/?name=dr",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}/api/heroes/?name=dr",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"heroes",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "dr"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "heroes/17",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}/api/heroes/17",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"heroes",
+						"17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete/17",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}/api/heroes/17",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"heroes",
+						"17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "heroes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 13,\r\n    \"name\": \"Sergey Stol\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}/api/heroes",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"heroes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
